@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lab.ResultsController"
+      spacing="20" alignment="CENTER"
+      style="-fx-background-color: linear-gradient(to bottom, #e6f0ff, #ffffff);">
+
+    <padding>
+        <Insets top="20" right="30" bottom="20" left="30"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="Game Results"
+           style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2a2a2a;" />
+
+    <!-- Styled Table -->
+    <TableView fx:id="resultsTable"
+               prefHeight="400" prefWidth="720"
+               style="-fx-border-color: #b3cce6; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: #ffffff; -fx-table-cell-border-color: #e0e0e0;">
+
+        <columns>
+            <TableColumn fx:id="playerColumn"
+                         text="Player Name" prefWidth="240"
+                         style="-fx-alignment: CENTER-LEFT;" />
+            <TableColumn fx:id="scoreColumn"
+                         text="Score" prefWidth="150"
+                         style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="timeColumn"
+                         text="Time" prefWidth="300"
+                         style="-fx-alignment: CENTER-LEFT;" />
+        </columns>
+    </TableView>
+    <Button text="Delete Selected Result" onAction="#handleDeleteSelected"
+            style="-fx-background-color: #ff4d4d; -fx-text-fill: white; -fx-font-weight: bold;"/>
+</VBox>

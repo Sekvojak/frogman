@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.GameController"> <!-- Replace with your GameController package -->
+
+   <children>
+      <Canvas fx:id="gameCanvas" height="550.0" layoutX="8.0" width="1000.0" />
+      <Label fx:id="scoreLabel" alignment="CENTER" layoutX="860.0" layoutY="262.0" prefHeight="52.0" prefWidth="142.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Text" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="864.0" layoutY="455.0" prefHeight="52.0" prefWidth="134.0" text="24" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Text" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelLabel" alignment="CENTER" layoutX="864.0" layoutY="163.0" prefHeight="52.0" prefWidth="134.0" text="1" textAlignment="CENTER">
+         <font>
+            <Font name="Sitka Text" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

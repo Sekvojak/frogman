@@ -1,0 +1,25 @@
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Maven / Gradle
+**/target/
+**/build/
+**/.gradle/
+
+# Logs
+**/logs/
+*.log
+
+# Archives
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# H2 database files
+**/*.mv.db
+**/*.trace.db
+backend/data/
