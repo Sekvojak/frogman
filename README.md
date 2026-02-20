@@ -8,16 +8,14 @@ FrogMan is a client-server school project consisting of:
 
 The project demonstrates backend development, REST communication, layered architecture, and integration between frontend and backend.
 
----
-
 ## 📂 Repository Structure
+
+```
 frogman/
-├── backend/ → Spring Boot REST API
-├── frontend/ → JavaFX game client
+├── backend/   # Spring Boot REST API
+├── frontend/  # JavaFX game client
 └── .gitignore
-
-
----
+```
 
 ## 🚀 Features
 
